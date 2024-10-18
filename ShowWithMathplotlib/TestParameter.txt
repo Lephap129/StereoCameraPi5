@@ -1,0 +1,114 @@
+#Test 1
+block_size = 25
+min_disp = 0
+max_disp = 16*2
+uniquenessRatio = 15
+speckleWindowSize = 100
+speckleRange = 5
+disp12MaxDiff = 5
+P1=8 * 1 * block_size * block_size
+P2=32 * 1 * block_size * block_size
+preFilterCap = 30
+mode=cv2.STEREO_SGBM_MODE_SGBM_3WAY
+lmbda = 8000
+sigma = 1.5
+
+#Test 2
+block_size = 11
+min_disp = 0
+max_disp = 16*8
+uniquenessRatio = 15
+speckleWindowSize = 150
+speckleRange = 2
+disp12MaxDiff = 2
+P1=8 * 3 * block_size * block_size
+P2=32 * 3 * block_size * block_size
+preFilterCap = 30
+mode=cv2.STEREO_SGBM_MODE_SGBM_3WAY
+lmbda = 15000
+sigma = 2
+
+#Test 3
+block_size = 15
+min_disp = 16*3
+max_disp = 16*8
+uniquenessRatio = 15
+speckleWindowSize = 150
+speckleRange = 5
+disp12MaxDiff = 5
+P1=8 * 3 * block_size * block_size
+P2=32 * 3 * block_size * block_size
+preFilterCap = 30
+mode=cv2.STEREO_SGBM_MODE_SGBM_3WAY
+lmbda = 15000
+sigma = 2
+
+#Test 4
+block_size = 5
+min_disp = 16*2
+max_disp = 16*10
+uniquenessRatio = 20
+speckleWindowSize = 200
+speckleRange = 2
+disp12MaxDiff = 2
+P1=8 * 3 * block_size * block_size
+P2=32 * 3 * block_size * block_size
+preFilterCap = 30
+mode=cv2.STEREO_SGBM_MODE_SGBM_3WAY
+lmbda = 20000
+sigma = 2
+
+#Test 5
+# Initialize StereoSGBM
+block_size = 1
+min_disp = 0
+max_disp = 16*2
+uniquenessRatio = 15
+speckleWindowSize = 150
+speckleRange = 3
+disp12MaxDiff = 1
+P1=8 * 3 * block_size * block_size
+P2=32 * 3 * block_size * block_size
+preFilterCap = 63
+mode=cv2.STEREO_SGBM_MODE_SGBM_3WAY
+lmbda = 80000
+sigma = 1.8
+# Preform is ok, show from 0.6 - 5m
+
+#Test 6
+# Initialize StereoSGBM
+block_size = 2
+min_disp = 0
+max_disp = 16
+uniquenessRatio = 15
+speckleWindowSize = 150
+speckleRange = 3
+disp12MaxDiff = 1
+P1=8 * 3 * block_size * block_size
+P2=32 * 3 * block_size * block_size
+preFilterCap = 63
+mode=cv2.STEREO_SGBM_MODE_SGBM_3WAY
+lmbda = 80000
+sigma = 1.8
+#Test good for various view, decrease accurence
+
+# Distance interpolation function
+# Initialize StereoSGBM
+block_size = 1
+min_disp = 4
+max_disp = 16*3
+uniquenessRatio = 15
+speckleWindowSize = 150
+speckleRange = 3
+disp12MaxDiff = 1
+P1=8 * 3 * block_size * block_size
+P2=32 * 3 * block_size * block_size
+preFilterCap = 63
+mode=cv2.STEREO_SGBM_MODE_SGBM_3WAY
+lmbda = 80000
+sigma = 1.8
+Distance= 7*10**8*average**(-2.4) #range 1.4-10 m
+
+
+
+Distance= 31729*average**(-0.833) #range 2.2-30 m
